@@ -22,6 +22,8 @@ public class RecArea {
 		
 		System.out.println(area);
 		
+		-----------------------------------------------------------------------
+			
 		double width, height, area;
 		
 		width = 100;
