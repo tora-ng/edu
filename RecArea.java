@@ -3,17 +3,17 @@ public class RecArea {
 
 	public static void main(String[] args) {
 		
-		/*"ÀÌÅ¬¸³½º·Î java_area ÇÁ·ÎÁ§Æ®¸¦ ¸¸µé°í, 
-		¾Æ·¡ÀÇ Á¶°ÇÀ¸·Î ÇÁ·Î±×·¥ÇÏ½Ã¿À.
+		/*"ì´í´ë¦½ìŠ¤ë¡œ java_area í”„ë¡œì íŠ¸ë¥¼ ë§Œë“¤ê³ , 
+		ì•„ë˜ì˜ ì¡°ê±´ìœ¼ë¡œ í”„ë¡œê·¸ë¨í•˜ì‹œì˜¤.
 
-		RecArea.java ÆÄÀÏÀ» ¸¸µé°í
+		RecArea.java íŒŒì¼ì„ ë§Œë“¤ê³ 
 
-		°¡·Î¿Í ¼¼·Î¸¦ ´ã´Â º¯¼ö ¼±¾ğ. ÇØ´ç º¯¼ö¿¡ ÀÓÀÇ 
-		°¡·Î,¼¼·Î°ª ÇÒ´ç
+		ê°€ë¡œì™€ ì„¸ë¡œë¥¼ ë‹´ëŠ” ë³€ìˆ˜ ì„ ì–¸. í•´ë‹¹ ë³€ìˆ˜ì— ì„ì˜ 
+		ê°€ë¡œ,ì„¸ë¡œê°’ í• ë‹¹
 
-		³ĞÀÌ¸¦ ´ã´Â º¯¼ö ¼±¾ğ
+		ë„“ì´ë¥¼ ë‹´ëŠ” ë³€ìˆ˜ ì„ ì–¸
 
-		ÇØ´ç ³ĞÀÌ Ãâ·Â
+		í•´ë‹¹ ë„“ì´ ì¶œë ¥
 		*/
 		
 		int hor = 10;
@@ -21,7 +21,14 @@ public class RecArea {
 		int area = hor * ver;
 		
 		System.out.println(area);
-
+		
+		double width, height, area;
+		
+		width = 100;
+		height = 200;
+		area = width * height;
+		System.out.println(area);
+		
 	}
 
 }
