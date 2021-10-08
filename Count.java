@@ -3,31 +3,21 @@ public class Count {
 
 	public static void main(String[] args) {
 
-		
-		/*
 		int count = 0;
 		
-		while( (num++) < 1000 ) {
-			
-			if ((num % 2 == 0) && (num % 3 == 0)) {
-				System.out.println(num);
-				
-				count++;
-			//	System.out.println(num);
-			}	
-				System.out.println(count);
-		}
-		*/
-		
-		int count = 0;
-		
-		for (int i = 1; i <= 1000; i++) {
-			if ((i % 2 != 0) || (i % 3 != 0)) {
-				continue;
+		for(int i = 1; i < 10; i++) {
+			for(int j = 1; j<10; j++) {
+				int result = i * j;
+					
+				if ((result % 2 == 0)&&(result % 3 == 0)) {
+					count++;
+					System.out.println(i + "*" + j + " = " + (result)+ " 개수 : "+count);
+				}
 			}
-		count++;
+				System.out.println( );				
 		}
-		System.out.println(count);
+		System.out.println("총 개수: " +count);	
 	}
-
 }
+
+//결과값이 2의 배수이자 3의 배수인 수의 개수
