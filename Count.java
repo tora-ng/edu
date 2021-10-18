@@ -1,23 +1,42 @@
+package Prac;
+
+import java.util.Scanner;
+
+class Word {
+	String word;
+	int ja = 0;
+	int mo = 0;
+
+	Word(String word) {
+		this.word = word;
+	}
+
+	public void show() {
+		for (int i = 0; i <= word.length(); i++) {
+		
+			switch (word.charAt(i)) {
+			case 'a', 'e', 'i', 'o', 'u':
+			{mo++;}
+				break;
+			default: ja++;
+				break;
+
+			}
+		}
+	}
+}
 
 public class Count {
 
 	public static void main(String[] args) {
 
-		int count = 0;
-		
-		for(int i = 1; i < 10; i++) {
-			for(int j = 1; j<10; j++) {
-				int result = i * j;
-					
-				if ((result % 2 == 0)&&(result % 3 == 0)) {
-					count++;
-					System.out.println(i + "*" + j + " = " + (result)+ " °³¼ö : "+count);
-				}
-			}
-				System.out.println( );				
-		}
-		System.out.println("ÃÑ °³¼ö: " +count);	
-	}
-}
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ì˜ì–´ë¡œ ë¬¸ìžì—´ì„ ìž…ë ¥í•˜ì„¸ìš”.");
 
-//°á°ú°ªÀÌ 2ÀÇ ¹è¼öÀÌÀÚ 3ÀÇ ¹è¼öÀÎ ¼öÀÇ °³¼ö
+		String word = sc.next();
+		Word w = new Word(word); //ê°ì²´ìƒì„±
+
+		w.show();
+	}
+
+}
