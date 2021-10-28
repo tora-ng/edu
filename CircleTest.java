@@ -1,33 +1,77 @@
-import java.util.Scanner;
-
-class Circle {
-	private int radius;
-
-	Circle(int radius) {
-		this.radius = radius;
-	}
-
-	public double setArea() {
-		double area = radius * radius * Math.PI;
-		return area;
-	}
-}
-
-public class CircleTest {
-
-	public static void main(String[] args) {
-		System.out.println("ë°˜ì§€ë¦„ ê°’ì„ ì…ë ¥í•˜ì„¸ìš”");
-		Scanner sc = new Scanner(System.in);
-		
-		int radius = sc.nextInt();
-
-		Circle r = new Circle(radius);
-		
-		double area = radius * radius * Math.PI;
-		
-		System.out.println(area);
-	
-
-	}
-
-}
+///*
+//´ÙÀ½Àº µµÇüÀÇ ±¸¼ºÀ» ¹¦»çÇÏ´Â ÀÎÅÍÆäÀÌ½ºÀÌ´Ù.
+//
+//
+//interface Shape {
+//   final double PI = 3.14; // »ó¼ö
+//   void draw(); // µµÇüÀ» ±×¸®´Â Ãß»ó ¸Ş¼Òµå
+//   double getArea(); // µµÇüÀÇ ¸éÀûÀ» ¸®ÅÏÇÏ´Â Ãß»ó ¸Ş¼Òµå
+//   default public void redraw() { // µğÆúÆ® ¸Ş¼Òµå
+//      System.out.print("--- ´Ù½Ã ±×¸³´Ï´Ù.");
+//      draw();
+//   }
+//}
+//
+//´ÙÀ½ main() ¸Ş¼Òµå¸¦ Âü°íÇÏ¿©, 
+//ÀÎÅÍÆäÀÌ½º ShapeÀ» ±¸ÇöÇÑ Å¬·¡½º Circle¸¦ ÀÛ¼ºÇÏ°í ÀüÃ¼ ÇÁ·Î±×·¥À» ¿Ï¼ºÇÏ¶ó.
+//
+//public static void main(String[] args) {
+//   Shape donut = new Circle(10); // ¹İÁö¸§ÀÌ 10ÀÎ ¿ø °´Ã¼
+//   donut.redraw();
+//   System.out.println("¸éÀûÀº "+ donut.getArea());
+//}
+//
+// */
+//
+//package class_10_28;
+//
+//interface Shape {
+//	final double PI = 3.14; // »ó¼ö
+//
+//	void draw(); // µµÇüÀ» ±×¸®´Â Ãß»ó ¸Ş¼Òµå
+//
+//	double getArea(); // µµÇüÀÇ ¸éÀûÀ» ¸®ÅÏÇÏ´Â Ãß»ó ¸Ş¼Òµå
+//
+//	default public void redraw() { // µğÆúÆ® ¸Ş¼Òµå
+//		System.out.print("--- ´Ù½Ã ±×¸³´Ï´Ù.");
+//		draw();
+//	}
+//}
+//
+//class Circle implements Shape {
+//	private double r;
+//
+//	Circle(double r) {
+//		this.r = r;
+//	}
+//
+//	public double getR() {
+//		return r;
+//	}
+//
+//	public void setR(double r) {
+//		this.r = r;
+//	}
+//
+//	public void draw() {
+//
+//	}
+//	@Override
+//	public double getArea() {
+//		return r * r * PI;
+//	}
+//
+//}
+//
+//public class CircleTest {
+//
+//	public static void main(String[] args) {
+//		Shape donut = new Circle(10); // ¹İÁö¸§ÀÌ 10ÀÎ ¿ø °´Ã¼
+//		donut.redraw();
+//		System.out.println("¸éÀûÀº " + donut.getArea());
+//	}
+//}
+//
+///*
+// * --- ´Ù½Ã ±×¸³´Ï´Ù.¹İÁö¸§ÀÌ 10ÀÎ ¿øÀÔ´Ï´Ù. ¸éÀûÀº 314.0
+// */
